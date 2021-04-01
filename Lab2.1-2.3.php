@@ -13,5 +13,4 @@
         echo str_replace("world", "Dolly", "Hello world!"), "<br/>"; // outputs Hello Dolly!
     ?>
 </body>
-
 </html>
