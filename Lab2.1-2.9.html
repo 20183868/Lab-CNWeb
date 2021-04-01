@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Client Information</title>
+</head>
+<body>
+    <form action="Lab2.1-2.9.php" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Name</label>
+                </td>
+                <td>
+                    <input type="text" id="uname" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age</label>
+                </td>
+                <td>
+                    <input type="text" name="userage" id="age" size="2" maxlength="2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="university">University</label>
+                </td>
+                <td>
+                    <input type="text" id="university" name="useruni">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="uclass">Class</label>
+                </td>
+                <td>
+                    <input type="text" id="uclass" name="class">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="uemail">Email</label>
+                </td>
+                <td>
+                    <input type="text" id="uemail" name="usermail">
+                    <button type="button">Check</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <label for="pass">Password</label>
+                </td>
+                <td>
+                        <input type="password" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Country</label>
+                </td>
+                <td>
+                    <input type="text" value="Vietnam" name="country" disabled>
+                    <input hidden name="country" value = "Vietnam">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="res">Avatar</label>
+                </td>
+                <td>
+                    <input type="file" id="res" name="avatar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Hobbies</label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="check_list[]" value="Sport"> Sport
+                    </label>
+                    <label>
+                        <input type="checkbox" name="check_list[]" value="Reading"> Reading
+                    </label>
+                    <label>
+                        <input type="checkbox" name="check_list[]" value="Game"> Game
+                    </label>
+                    <label>
+                        <input type="checkbox" name="check_list[]" value="Shopping"> Shopping
+                    </label>
+                    <label>
+                        <input type="checkbox" name="check_list[]" value="Socializing"> Socializing
+                    </label>
+                    <label>
+                        <input type="checkbox" name="check_list[]" value="Others"> Others
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" value="f" name="gender" checked> Female</label>
+                        <label>
+                        <input type="radio" value="m" name="gender"> Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <label for="city">City</label>
+                </td>
+                <td>
+                        <select id="city" name="city">
+                            <option disabled selected>--Choose City--</option>
+                                <optgroup label="Metros">
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Hải Phòng">Hải Phòng</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                                    <option value="Cần Thơ">Cần Thơ</option>
+                                </optgroup>
+                                <optgroup label="Others">
+                                    <option value="An Giang">An Giang
+                                        <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                                        <option value="Bắc Giang">Bắc Giang
+                                        <option value="Bắc Kạn">Bắc Kạn
+                                        <option value="Bạc Liêu">Bạc Liêu
+                                        <option value="Bắc Ninh">Bắc Ninh
+                                        <option value="Bến Tre">Bến Tre
+                                        <option value="Bình Định">Bình Định
+                                        <option value="Bình Dương">Bình Dương
+                                        <option value="Bình Phước">Bình Phước
+                                        <option value="Bình Thuận">Bình Thuận
+                                        <option value="Bình Thuận">Bình Thuận
+                                        <option value="Cà Mau">Cà Mau
+                                        <option value="Cao Bằng">Cao Bằng
+                                        <option value="Đắk Lắk">Đắk Lắk
+                                        <option value="Đắk Nông">Đắk Nông
+                                        <option value="Điện Biên">Điện Biên
+                                        <option value="Đồng Nai">Đồng Nai
+                                        <option value="Đồng Tháp">Đồng Tháp
+                                        <option value="Đồng Tháp">Đồng Tháp
+                                        <option value="Gia Lai">Gia Lai
+                                        <option value="Hà Giang">Hà Giang
+                                        <option value="Hà Nam">Hà Nam
+                                        <option value="Hà Tĩnh">Hà Tĩnh
+                                        <option value="Hải Dương">Hải Dương
+                                        <option value="Hậu Giang">Hậu Giang
+                                        <option value="Hòa Bình">Hòa Bình
+                                        <option value="Hưng Yên">Hưng Yên
+                                        <option value="Khánh Hòa">Khánh Hòa
+                                        <option value="Kiên Giang">Kiên Giang
+                                        <option value="Kon Tum">Kon Tum
+                                        <option value="Lai Châu">Lai Châu
+                                        <option value="Lâm Đồng">Lâm Đồng
+                                        <option value="Lạng Sơn">Lạng Sơn
+                                        <option value="Lào Cai">Lào Cai
+                                        <option value="Long An">Long An
+                                        <option value="Nam Định">Nam Định
+                                        <option value="Nghệ An">Nghệ An
+                                        <option value="Ninh Bình">Ninh Bình
+                                        <option value="Ninh Thuận">Ninh Thuận
+                                        <option value="Phú Thọ">Phú Thọ
+                                        <option value="Quảng Bình">Quảng Bình
+                                        <option value="Quảng Bình">Quảng Bình
+                                        <option value="Quảng Ngãi">Quảng Ngãi
+                                        <option value="Quảng Ninh">Quảng Ninh
+                                        <option value="Quảng Trị">Quảng Trị
+                                        <option value="Sóc Trăng">Sóc Trăng
+                                        <option value="Sơn La">Sơn La
+                                        <option value="Tây Ninh">Tây Ninh
+                                        <option value="Thái Bình">Thái Bình
+                                        <option value="Thái Nguyên">Thái Nguyên
+                                        <option value="Thanh Hóa">Thanh Hóa
+                                        <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                                        <option value="Tiền Giang">Tiền Giang
+                                        <option value="Trà Vinh">Trà Vinh
+                                        <option value="Tuyên Quang">Tuyên Quang
+                                        <option value="Vĩnh Long">Vĩnh Long
+                                        <option value="Vĩnh Phúc">Vĩnh Phúc
+                                        <option value="Yên Bái">Yên Bái
+                                        <option value="Phú Yên">Phú Yên
+                                </optgroup>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                </td>
+                <td>
+                    <textarea name="address" rows="4" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
