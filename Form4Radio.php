@@ -13,5 +13,4 @@
         print("<br> Contact preference is $contact");
     ?>
 </body>
-
 </html>
