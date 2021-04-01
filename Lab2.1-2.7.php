@@ -21,5 +21,4 @@
         Tuy nhiên sau khi submit, trên thanh URL chỉ đến file thực thi Form4Radio.php, sử dụng phương thức GET sẽ thấy được dữ liệu còn với phương thức POST thì không 
     </form>
 </body>
-
 </html>
