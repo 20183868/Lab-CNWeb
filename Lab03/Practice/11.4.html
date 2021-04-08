@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "--//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <SCRIPT type="text/javascript">
+
+        function setAligin(aligin){
+            var pTag = window.document.getElementById("paragraph");
+            pTag.setAttribute("algin",aligin);
+        }
+    </SCRIPT>
+</HEAD>
+<body>
+    <form name="aliginForm">
+        <select id="aliginSelect">
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="center">center</option>
+        </select>
+        <input type="button" value="Go" onclick="setAligin(document.aliginForm.aliginSelect.value)">
+    </form>
+    <p id="paragraph">
+        This is some sample text .
+    </p>
+</body>
+</HTML>

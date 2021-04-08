@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colors</title>
+    </head>
+    <body>
+        <a id="red" href="https://www.youtube.com/watch?v=8YU8QYnSFzk" target="_blank" style="color: red; " onmouseover="changeTextColor('red')" onmouseout="changeTextColor('black')">Red</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=8YU8QYnSFzk" target="_blank" style="color: green;" onmouseover="changeTextColor('green')" onmouseout="changeTextColor('black')">Green</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=8YU8QYnSFzk" target="_blank" style="color: blue;" onmouseover="changeTextColor('blue') " onmouseout="changeTextColor('black')" >Blue</a>
+        <p id="demo" >Hello I'm here for your testing
+        </p>
+        <script type="text/javascript">
+            function changeTextColor(color){
+                var text = document.getElementById("demo");
+                text.style.color = color;
+            }
+            
+        </script>
+    </body>
+</html>

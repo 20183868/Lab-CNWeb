@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function getCookie(name) {
+            var re = new RegExp(name + "=([^;]+)");
+            var value = re.exec(document.cookie);
+            return (value != null) ? unescape(value[1]) : null;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Using JavaScript, we can display the values of cookies submitted from the right frame:</p>
+    <p> <b>Note:</b> Press f5 (refresh page) to display the result in left frame</p>        
+        <ul>
+          <li>field1: <script type="text/javascript">document.write(getCookie("field1"));</script></li>
+          <li>field2: <script type="text/javascript">document.write(getCookie("field2"));</script></li>
+          <li>field3: <script type="text/javascript">document.write(getCookie("field3"));</script></li>
+          <li>field4: <script type="text/javascript">document.write(getCookie("field4"));</script></li>
+        </ul>
+</body>
+
+</html>
