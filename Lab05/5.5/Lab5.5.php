@@ -3,17 +3,17 @@
 
              $user = 'root';
             
-             $pass = 'Trongduc2206';
+             $pass = '';
             
-             $mydb = 'testdb';
+             $mydb = 'businesses_service';
             
-             $table_name = 'Products';
+             $table_name = 'categories';
 
              $connect = mysqli_connect($server, $user, $pass, $mydb  );
             if(!$connect){
                 die ("Cannot connect to $server using $user"); 
             } else {
-                $selectQuery = 'select * from category';
+                $selectQuery = 'select * from categories';
                 $selectResult = mysqli_query($connect, $selectQuery);
             }
         ?>
@@ -37,9 +37,9 @@
             </tr>
             <?php
                 while($rows = mysqli_fetch_array($selectResult)){
-                    echo "<tr> <td>" .$rows['cat_id'] ."</td> ";
-                    echo " <td>" .$rows['title'] ."</td> ";
-                    echo " <td>" .$rows['description'] ."</td> </tr>";
+                    echo "<tr> <td>" .$rows['CategoryID'] ."</td> ";
+                    echo " <td>" .$rows['Title'] ."</td> ";
+                    echo " <td>" .$rows['Description'] ."</td> </tr>";
                 }
             ?>
             <tr>
@@ -66,7 +66,7 @@
                         $id = $_POST['catId'];
                         $title = $_POST['title'];
                         $description = $_POST['description'];
-                        $insertQuery =  "insert into category(cat_id, title, description) values('$id','$title','$description');";
+                        $insertQuery =  "insert into categories(CategoryID, Title, Description) values('$id','$title','$description');";
                         $insertResult = mysqli_query($connect, $insertQuery);
                         if($insertResult){
                             echo '<script type="text/javascript">alert("Insert Successfully ")</script>';
