@@ -37,7 +37,7 @@
                     <?php
                     $server = 'localhost';
                     $user = 'root';
-                    $pass = 'Tumysqlan@10';
+                    $pass = '';
                     $mydb = 'businesses_service';
                     $cat_tab = 'categories';
 

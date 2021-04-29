@@ -3,7 +3,7 @@
 
              $user = 'root';
             
-             $pass = 'Tumysqlan@10';
+             $pass = '';
             
              $mydb = 'businesses_service';
             

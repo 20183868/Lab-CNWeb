@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $dbuser = "root";
-$password = "Tumysqlan@10";
+$password = "";
 $dbname = "businesses_service";
 $conn = mysqli_connect($host, $dbuser, $password, $dbname);
 if (mysqli_connect_errno()) {
