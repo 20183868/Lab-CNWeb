@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tutorials>
+    <Post>
+        <Title>
+            Học CDATA trong XML miễn phí
+        </Title>
+        <Code>
+            <![CDATA[ 
+            <?xml version="1.0" encoding="UTF-8"?>
+            <Student>
+                <Name>
+                   Hoàng Văn Bút
+                </Name>
+                <Age>
+                    21
+                </Age>
+                <MSSV>
+                    20183868
+                </MSSV>
+            </Student>
+            ]]>
+        </Code>
+    </Post>
+</Tutorials>
